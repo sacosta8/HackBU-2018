@@ -25,9 +25,12 @@
     "content_scripts":
     [
       {
-        "matches": ["http://*/*","https://*/*"],
-        "js": ["content.js"]
+        "matches":  ["http://*/*", "https://*/*"],
+        "js": ["content.js","highlightNumbers.js"],
+        "css": ["highlight.css"]
       }
-    ]
+    ],
+
+    "permissions": ["http://www.domain.com/*"]
 
   }
