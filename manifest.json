@@ -1,0 +1,33 @@
+//Use the devtools.html file to put in javascript files
+// etc <script src="devtools.js"></script> should go in that file to link the devtools js file
+{
+  "name": "TBD",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "Our DANK project",
+    "default_popup": "popup.html",
+    "default_icon": "icons/Advance3_sonic.png"
+
+  },
+
+  "devtools_page": "devtools.html",
+  "omnibox": {"keyword": "yeah"},
+
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+
+
+    "content_scripts":
+    [
+      {
+        "matches": ["http://*/*","https://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+
+  }
