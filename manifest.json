@@ -5,9 +5,9 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "browser_action": {
-    "default_title": "Our DANK project",
+    "default_title": "Word Replacer",
     "default_popup": "popup.html",
-    "default_icon": "icons/Advance3_sonic.png"
+    "default_icon": "icons/420-512.png"
 
   },
 

@@ -1,6 +1,6 @@
 
 
-chrome.browserAction.setBadgetext({text: "DANKKKK"});
+chrome.browserAction.setBadgetext({text: "Word Replacer"});
 
 chrome.omnibox.onInputChanged.addListener(function(text, suggest) {
     suggest([
