@@ -7,10 +7,10 @@ numberArray.forEach(function(v){
   // how to highlight just the numbers in question, but you could easily
   // similarly highlight surrounding text as well
 
-  var num = "(" + v + ")";
+  var num = v;
 
   // Select the '<td>' that contains the number we are looking for
-  var td = $('td.col-question:contains('+num+')');
+  var td = $('p:contains('+num+')');
 
   // Make sure that this number exists
   if(td.length > 0){

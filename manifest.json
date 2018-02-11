@@ -22,15 +22,19 @@
 
 
 
-    "content_scripts":
-    [
+  "content_scripts": [
       {
-        "matches":  ["http://*/*", "https://*/*"],
-        "js": ["content.js","highlightNumbers.js"],
-        "css": ["highlight.css"]
-      }
-    ],
+          "matches": [
+              "*://*/*"
+          ],
+          "js": [
+              "content.js"
+          ],
 
-    "permissions": ["http://www.domain.com/*"]
+          "run_at": "document_end"
+      }
+  ],
+
+    "permissions": ["http://*/*", "https://*/*"]
 
   }
